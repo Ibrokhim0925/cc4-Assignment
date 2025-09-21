@@ -11,3 +11,27 @@ const products = [
     {sku: "K-900", name: "game CDs", category: "entertainment", price: 39.99, invnetory: 206 },
 ];
 
+// Step 3: Applying category discounts 
+
+for (let product of products) {
+    let discount = 0;
+    switch (product.category) {
+        case "electronics":
+            discount = .2
+            break; 
+        case "groceries":
+        case "household":
+            discount = .1
+            break;
+        case "apparel":
+            discount = .15
+            break;
+        default:
+            discount = 0;
+            break;    
+    }
+    product.promoPrice = (product.price * (1 - discount));
+    
+}
+
+console.log(products)
