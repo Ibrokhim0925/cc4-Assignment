@@ -35,3 +35,22 @@ for (let product of products) {
 }
 
 console.log(products)
+
+// Step 4: Creating customerType and applying an additional discount 
+
+let customerType = "student";
+
+let extraDiscount = 0;
+
+    if (customerType === "student")  {
+        extraDiscount = 0.05;  
+
+    } else if (customerType === "senior") {
+        extraDiscount = 0.07;
+
+    } else {
+        extraDiscount = 0;
+    }
+       
+console.log(`Customer Type: "${customerType}", Additional Discount: ${extraDiscount * 100}%`);
+
