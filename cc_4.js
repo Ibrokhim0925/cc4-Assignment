@@ -73,3 +73,11 @@ for (let i=1; i <= 3; i++) {
     console.log(`Customer ${i} Total Cost: $${finalTotal.toFixed(2)}`);
 }
 
+// Step 6: Inspecting products 
+
+const singleProduct = products[0];
+console.log (`\nInspecting properties for: ${singleProduct.name}`);
+
+for (const key in singleProduct) {
+    console.log(` ${singleProduct[key]}`);
+}
