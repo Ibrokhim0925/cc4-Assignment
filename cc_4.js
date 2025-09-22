@@ -54,3 +54,22 @@ let extraDiscount = 0;
        
 console.log(`Customer Type: "${customerType}", Additional Discount: ${extraDiscount * 100}%`);
 
+// Step 5: Simulating a checkout process for 3 customer types
+
+const numberOfCustomers = 3;
+
+for (let i=1; i <= 3; i++) {
+    let customerSubtotal = 0;
+
+    for (let product of products) {
+        if (product.inventory > 0) {
+            customerSubtotal += product.promoPrice;
+
+            product.inventory--;
+        }
+    }
+    const finalTotal = customerSubtotal * (1-extraDiscount);
+
+    console.log(`Customer ${i} Total Cost: $${finalTotal.toFixed(2)}`);
+}
+
