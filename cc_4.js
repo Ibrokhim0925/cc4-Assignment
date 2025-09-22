@@ -81,3 +81,13 @@ console.log (`\nInspecting properties for: ${singleProduct.name}`);
 for (const key in singleProduct) {
     console.log(` ${singleProduct[key]}`);
 }
+
+// Step 7: Final inventory status 
+
+for (const product of products) {
+    console.log(`\nProduct: ${product.name}`);
+
+    for (const [key, value] of Object.entries(product)) {
+        console.log(`  - ${key}: ${value}`);
+    }
+}
