@@ -11,6 +11,7 @@ const products = [
     {sku: "K-900", name: "game CDs", category: "entertainment", price: 39.99, invnetory: 206 },
 ];
 
+
 // Step 3: Applying category discounts 
 
 for (let product of products) {
@@ -36,6 +37,7 @@ for (let product of products) {
 
 console.log(products)
 
+
 // Step 4: Creating customerType and applying an additional discount 
 
 let customerType = "student";
@@ -53,6 +55,7 @@ let extraDiscount = 0;
     }
        
 console.log(`Customer Type: "${customerType}", Additional Discount: ${extraDiscount * 100}%`);
+
 
 // Step 5: Simulating a checkout process for 3 customer types
 
@@ -81,6 +84,7 @@ console.log (`\nInspecting properties for: ${singleProduct.name}`);
 for (const key in singleProduct) {
     console.log(` ${singleProduct[key]}`);
 }
+
 
 // Step 7: Final inventory status 
 
