@@ -1,5 +1,5 @@
 // Coding Challange 4
-
+console.log("AHHHH")
 // Step 2: Product list 
 
 const products = [
